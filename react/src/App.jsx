@@ -1,17 +1,28 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React from 'react'
+import Child from './component/Child'
+import Abouts from './pages/Abouts'
+import Home from './pages/Home'
+import Counter from './pages/Counter'
 
-function App() {
-  const [count, setCount] = useState(0)
 
+
+
+
+const App = () => {
+  var month =["January","Februray","March","April","May","June","July","August","September","October","November","December"];
+  var users={username: "dharshini",password: "7979"}
   return (
-    <>
     <div>
-      <h1>HELLO WORLD</h1>
-      </div>
-    </>
+        <Child name="dharshu"phno="1234567890" dept="IT"/>
+         <Child name="dharshini" phno="1212121212"dept="CSE"/>
+         <Home items ={month} users={users}/>
+        
+      <Counter/>
+        <Abouts/>
+   
+        
+
+    </div>
   )
 }
 
