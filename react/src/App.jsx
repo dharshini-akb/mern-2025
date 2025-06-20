@@ -6,16 +6,28 @@ import Contact from './pages/Contact'
 import Skills from  './pages/Skills'
 import FormPage from './pages/FormPage'
 import Counter from './components/Counter'
+import Navbar from './components/Navbar';
 
 
 
 const App = () => {
-  var month =["January","Februray","March","April","May","June","July","August","September","October","November","December"];
+   return (
+    <div>
+      <Navbar />
+     <Home />
+      <About />
+      <Contact />
+      <Skills />
+    </div>
+  );
+}
+
+  /*var month =["January","Februray","March","April","May","June","July","August","September","October","November","December"];
   var users={username: "dharshu",password: "7979"}
   return (
     <div>
       <Counter/>
-        {/*
+        {
         <Child name="dharshini"phno="1234567890" dept="IT"/>
          <Child name="madhu" phno="1212121212"dept="CSE"/>
          <Homee items ={month} users={users}/>
@@ -24,9 +36,9 @@ const App = () => {
         <About/>
         <Contact/>
         <Skills/>
-        */}
+        }
     </div>
   )
-}
+}*/
 
 export default App
