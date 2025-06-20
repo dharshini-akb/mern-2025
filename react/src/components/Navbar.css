@@ -1,25 +1,20 @@
+.navbar{
+    display: flex;
+    background:linear-gradientred(pink,black,green);
+    padding: 40px;
+    justify-content: space-evenly;
 
-.navbar {
-  background-color: #333;
-  padding: 10px 0;
 }
+.Link{
+    list-style: none;
+    background-color: pink;
+    text-decoration: none;
+    padding: 40px;
+    border:2px solid black;
+    border-radius: 10px;
 
-.nav-list {
-  list-style-type: none;
-  display: flex;
-  justify-content: center;
-  margin: 0;
-  padding: 0;
 }
-
-.nav-list li {
-  margin: 0 20px;
-  color: white;
-  cursor: pointer;
-  font-weight: bold;
-}
-
-.nav-list li:hover {
-  color: #ff9800;
-  transition: 0.3s;
+.Link:hover{
+    background-color: seagreen;
+    color: white;
 }
