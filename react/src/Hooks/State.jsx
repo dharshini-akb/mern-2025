@@ -9,7 +9,7 @@ const State=() => {
   return (
     <>
     <div>state</div>
-    <button onClick ={increment}>Increment</button>
+    <button onClick ={increment}>+</button>
 <h1>{count}</h1>
 </>
     
