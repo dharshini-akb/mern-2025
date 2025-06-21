@@ -11,6 +11,9 @@ import Hooks from './pages/Hooks';
 import State from './Hooks/State';
 import Effect from './Hooks/Effect.jsx';
 import Effect2 from './Hooks/Effect2.jsx';
+import Ref from './Hooks/Ref.jsx';
+import Reducer from './Hooks/Reducer.jsx';
+
 
 import { Route,Routes } from 'react-router-dom';
 
@@ -39,6 +42,9 @@ const App = () => {
           <Route path='/State' element={<State/>}/>
           <Route path='/Effect' element={<Effect/>}/>
           <Route path='/Effect2' element={<Effect2/>}/>
+          <Route path='/Ref' element={<Ref/>}/>
+          <Route path='/Reducer' element={<Reducer/>}/>
+          
       </Routes>
     </div>
   );
